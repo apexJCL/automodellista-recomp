@@ -1,0 +1,74 @@
+# Auto Modellista's HUD table for the toolkit's HUD layer (docs/runtime/
+# config.md, "HUD table"; openspec change am-widescreen). src/hud_mod.c
+# embeds it at build time and hands it every call of the 2D library's
+# entries, as a quad it builds from the entry's command struct.
+version = 1
+
+# The library draws XYZRHW in 640x480 guest pixels, top-left, y down, on
+# the 640x480 frame (design D2).
+[canvas]
+w = 640
+h = 480
+origin = "top-left"
+y = "down"
+view = [0, 0, 640, 480]
+target = "frame"
+source = "fixed"
+
+# The quad hud_mod.c builds: {x, y, u, v} f32, four vertices (design D3).
+[layout]
+stride = 16
+x_off = 0
+u_off = 8
+prim = 4
+
+# The lap times' digits (sub_00022B20) are a helper the result screens
+# call too: the race's call names them, and the other callers stay
+# unlisted (centred, as at 4:3). It draws through sub_00022A60 as well.
+[[wrapper]]
+va = 0x00022B20
+name = "draw_time"
+
+# The race HUD (sub_000230C0), from the level-1 capture over a race
+# (runs/am-widescreen/cap-race2, design D4). The left column: the
+# position, the three lap time labels and their digits.
+[[group]]
+name = "left"
+kind = "left"
+
+# The top right: the lap count, the course map and its dots. The gauge
+# cluster at the bottom right stays where Hor+ puts it: the tachometer,
+# the gear and AT are a 3D model drawn in camera space (sub_0001C050 from
+# sub_000230C0), which no 2D entry draws, so its speed digits (sub_000224C0,
+# 0x00022518) stay unlisted beside it (design D6).
+[[group]]
+name = "right"
+kind = "right"
+
+[[site]]
+ret_va = 0x00022E61
+element = "lap_times"
+group = "left"
+note = "sub_00022DB0's six calls of draw_time"
+
+[[site]]
+ret_va = 0x00022E31
+element = "labels"
+group = "left"
+note = "22 static pieces, both sides: hud_mod.c mirrors those right of the middle (design D5)"
+
+[[site]]
+ret_va = 0x00022DEC
+element = "course_map"
+group = "right"
+
+[[site]]
+ret_va = 0x00022D76
+element = "map_dots"
+group = "right"
+note = "sub_00022CE0: the cars on the course map"
+
+[[site]]
+ret_va = 0x00022E8E
+element = "lap_label"
+group = "right"

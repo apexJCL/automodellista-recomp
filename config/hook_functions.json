@@ -1,0 +1,156 @@
+{
+ "version": 1,
+ "mods": {
+  "hook_functions": [
+   "0x0010E180",
+   "0x0010E1E0",
+   "0x0010E210",
+   "0x0010E270",
+   "0x0010E2A0",
+   "0x0010E2D0",
+   "0x0010E300",
+   "0x0010E4B0",
+   "0x0010E540",
+   "0x0010E690",
+   "0x0010E6C0",
+   "0x0010E6F0",
+   "0x00022B20"
+  ],
+  "signatures": {},
+  "st0": [],
+  "no_st0": [
+   "0x0010E180",
+   "0x0010E1E0",
+   "0x0010E210",
+   "0x0010E270",
+   "0x0010E2A0",
+   "0x0010E2D0",
+   "0x0010E300",
+   "0x0010E4B0",
+   "0x0010E540",
+   "0x0010E690",
+   "0x0010E6C0",
+   "0x0010E6F0",
+   "0x00022B20"
+  ]
+ },
+ "functions": [
+  {
+   "entry": "0x0010E180",
+   "va": "0x0010E180",
+   "name": "sub_0010E180",
+   "signature": "",
+   "ret_pop": 0,
+   "x87": false,
+   "x87_from": "override"
+  },
+  {
+   "entry": "0x0010E1E0",
+   "va": "0x0010E1E0",
+   "name": "sub_0010E1E0",
+   "signature": "",
+   "ret_pop": 0,
+   "x87": false,
+   "x87_from": "override"
+  },
+  {
+   "entry": "0x0010E210",
+   "va": "0x0010E210",
+   "name": "sub_0010E210",
+   "signature": "",
+   "ret_pop": 0,
+   "x87": false,
+   "x87_from": "override"
+  },
+  {
+   "entry": "0x0010E270",
+   "va": "0x0010E270",
+   "name": "sub_0010E270",
+   "signature": "",
+   "ret_pop": 0,
+   "x87": false,
+   "x87_from": "override"
+  },
+  {
+   "entry": "0x0010E2A0",
+   "va": "0x0010E2A0",
+   "name": "sub_0010E2A0",
+   "signature": "",
+   "ret_pop": 0,
+   "x87": false,
+   "x87_from": "override"
+  },
+  {
+   "entry": "0x0010E2D0",
+   "va": "0x0010E2D0",
+   "name": "sub_0010E2D0",
+   "signature": "",
+   "ret_pop": 0,
+   "x87": false,
+   "x87_from": "override"
+  },
+  {
+   "entry": "0x0010E300",
+   "va": "0x0010E300",
+   "name": "sub_0010E300",
+   "signature": "",
+   "ret_pop": 0,
+   "x87": false,
+   "x87_from": "override"
+  },
+  {
+   "entry": "0x0010E4B0",
+   "va": "0x0010E4B0",
+   "name": "sub_0010E4B0",
+   "signature": "",
+   "ret_pop": 0,
+   "x87": false,
+   "x87_from": "override"
+  },
+  {
+   "entry": "0x0010E540",
+   "va": "0x0010E540",
+   "name": "sub_0010E540",
+   "signature": "",
+   "ret_pop": 0,
+   "x87": false,
+   "x87_from": "override"
+  },
+  {
+   "entry": "0x0010E690",
+   "va": "0x0010E690",
+   "name": "sub_0010E690",
+   "signature": "",
+   "ret_pop": 0,
+   "x87": false,
+   "x87_from": "override"
+  },
+  {
+   "entry": "0x0010E6C0",
+   "va": "0x0010E6C0",
+   "name": "sub_0010E6C0",
+   "signature": "",
+   "ret_pop": 0,
+   "x87": false,
+   "x87_from": "override"
+  },
+  {
+   "entry": "0x0010E6F0",
+   "va": "0x0010E6F0",
+   "name": "sub_0010E6F0",
+   "signature": "",
+   "ret_pop": 0,
+   "x87": false,
+   "x87_from": "override"
+  },
+  {
+   "entry": "0x00022B20",
+   "va": "0x00022B20",
+   "name": "sub_00022B20",
+   "signature": "",
+   "ret_pop": 0,
+   "x87": false,
+   "x87_from": "override"
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+[
+  {"start": "0x001F0E2D", "source": "ICALL failure, run1: thread start routine passed as ctx1 to PsCreateSystemThreadEx (CRT _beginthreadex trampoline)", "observed": true},
+  {"start": "0x001F7E8B", "source": "ICALL failure, run1: indirect call from the worker threads, address taken at 0x001F4739", "observed": true},
+  {"start": "0x0003DAF0", "source": "ICALL failure, gate-muldiv: loading the first race; byte switch on [arg+0x34] through a jump table", "observed": true},
+  {"start": "0x000E02A0", "source": "ICALL failure, gate-muldiv: loading the first race; byte switch on [arg+0x34] through a jump table", "observed": true},
+  {"start": "0x001F2395", "source": "ICALL failure, gate-seeds: in the race; CRT exp kernel, reached through the _trandisp table entry for \"exp\" at 0x003FFCB2", "observed": true},
+  {"start": "0x0008E880", "source": "ICALL failure, gopt1: opening the game options; second tail-jump thunk (byte switch on [arg+0x110] through the table at 0x0037FDF0) that the analysis merged into sub_0008E870", "observed": true}
+]
